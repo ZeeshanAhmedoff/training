@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en">
 <head>
-	<title>DEMO PROJECT</title>
+	<title>START BOOTSTRAP</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="../Css/styles.css"  type="text/css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +15,16 @@
 
 <body class="body">
 	<header class="mainHeader">
-		<nav>
-			<ul>
-			<li class="mainHeading"><a href="#">Start Bootstrap</a></li>
-			<li class="subHeading"><a href="#">Portfolio</a></li>
-			<li class="subHeading"><a href="#">About</a></li>
-			<li class="subHeading"><a href="#">Contact</a></li>
-		</ul></nav>
+		<div class="topnav" id="myTopnav">
+		  <a href="#home" class="mainHeading">START BOOTSTRAP</a>
+		  <a href="#news" class="subHeading">PORTFOLIO</a>
+		  <a href="#about" class="subHeading">ABOUT</a>
+		  <a href="#contact" class="subHeading">CONTACT</a>
+		  
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="fa fa-bars"></i>
+		  </a>
+		</div>
 	</header>
 	<div class="mainContainer">
 	<article class="firstDiv">
@@ -33,13 +39,100 @@
 			<p class="secondDivHeading"><b>PORTFOLIO</b></p>
 			<img class="BreakImage"
 				src="../src/img/breakLine2.png" alt="breaking the line">
-			<p class="firstDivText"><b>Web Developer- Graphic Designer - User Experience Designer</b></p>
+			
+			<div class="row">
+			  <div class="column">
+			    <img src="../src/img/1.png" alt="Snow" style="width:100%">
+			  </div>
+			  <div class="column">
+			    <img src="../src/img/2.png" alt="Forest" style="width:100%">
+			  </div>
+			  <div class="column">
+			    <img src="../src/img/3.png" alt="Mountains" style="width:100%">
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="column">
+			    <img src="../src/img/4.png" alt="Snow" style="width:100%">
+			  </div>
+			  <div class="column">
+			    <img src="../src/img/5.png" alt="Forest" style="width:100%">
+			  </div>
+			  <div class="column">
+			    <img src="../src/img/6.png" alt="Mountains" style="width:100%">
+			  </div>
+			</div>
 	</article>
-	</div>	
-	
-	
+	<article class="thirdDiv">
+			<p class="thirdDivHeading"><b>ABOUT</b></p>
+			<img class="BreakImage"
+				src="../src/img/breakLine2.png" alt="breaking the line">
+			
+			<div class="Textrow">
+			  <div class="TextColumn">
+			    <p class="About" align="justify"><b>Free lancer is a free bootstrap theme created by Strat Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optional LESS stylesheet for easy customization.</b></p>
+			  </div>
+			  <div class="TextColumn">
+			   <p align="justify"><b>Whether you're a student looking to showcase your work,a professional looking to attract clients,r a graphic artist looking to share your projects, this template is the perfect starting point!</b></p>
+			  </div>
+			</div>
+			<button class="button"><b><i class="fa fa-download"></i>    Download Now! </b></button>
+	</article>
+	<article class="forthDiV">
+			<p class="secondDivHeading"><b>CONTACT ME</b></p>
+			<img class="BreakImage"
+				src="../src/img/breakLine2.png" alt="breaking the line">
+			<form class="form">
+			  <label class="fLabel" for="fname">Name</label>
+			  <input class="formInput" type="text" id="fname" name="fname">
+			  <label class="fLabel" for="lname">Email address</label>
+			  <input class="formInput" type="text" id="lname" name="lname">
+			  <label class="fLabel" for="lname">contact</label>
+			  <input class="formInput" type="text" id="contact" name="contact">
+			  <label class="fLabel" for="lname">Message</label>
+			  <textarea rows="8" cols="50" class="formInput"> 
+			  </textarea>
+			  <button class="fButton">Send</button>
+			</form>				
+	</article>
+	<article class="lastDiv">
+		<div class="lTextrow">
+			  <div class="lTextColumn1" >
+			    <h2><pre>  LOCATION</pre></h2>
+			    <p>2215 John Daniel Drive Clark, MO 62342</p>
+			  </div>
+			  <div class="lTextColumn2">
+			   <h2><pre>    AROUND THE WEB</pre> </h2>
+			    <a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-youtube"></a>
+			  </div>
+			  <div class="lTextColumn3" >
+			   <h2>About the Freelancer</h2>
+			   <p>Freelancer is a free to use,open source
+			   Bootstrap theme created  by <a href="#" style="color: #3DF195">Start Bootstrap</a></p>
+			  </div>
+			</div>
+	</article>
+	</div>
+	<article class="footer">
+	<p style="text-align: center;color: white">Copyright &copy; Your website 2019<p>
+	</article>
 </body>
-<footer style="width: 100%;float: left;">
-	<p>Copyright</p>
-</footer>
+
 </html>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
